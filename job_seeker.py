@@ -7,7 +7,7 @@ import seeker_academics
 import seeker_experience
 import seeker_calendar
 import seeker_notices
-import seeker_companies
+import seeker_analytics
 import seeker_tracker
 
 # Function to fetch all job listings from the database
@@ -50,7 +50,7 @@ def main(user_info):
             st.experimental_rerun()
 
         if st.button("Analysis"):
-            st.session_state['current_page'] = 'companies'
+            st.session_state['current_page'] = 'analytics'
             st.experimental_rerun()
         
         st.write("")
@@ -91,8 +91,8 @@ def main(user_info):
         seeker_profile.main(user_info)
     elif st.session_state['current_page'] == 'jobs':
         display_jobs()  # Call a separate function to display the job portal
-    elif st.session_state['current_page'] == 'companies':
-        seeker_companies.main(user_info)
+    elif st.session_state['current_page'] == 'analytics':
+        seeker_analytics.main(user_info)
     elif st.session_state['current_page'] == 'academics':
         seeker_academics.main(user_info)
     elif st.session_state['current_page'] == 'skills':

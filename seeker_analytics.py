@@ -94,7 +94,7 @@ def main(user_info):
     # st.write("Here you can browse and view information about various companies.")
 
     # Add analysis options
-    st.header("Data Analysis")
+    st.header("Data Analytics")
     analysis_option = st.selectbox("Choose Analysis", [
         "Age Distribution",
         "Education Levels Distribution",
