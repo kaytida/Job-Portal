@@ -83,6 +83,9 @@ def main(user_info):
             st.session_state['current_page'] = 'job Tracker'
             st.experimental_rerun()
 
+        if st.button("Logout"):
+            st.session_state['role'] = None
+            st.experimental_rerun()
     # Main content area
     if st.session_state['current_page'] == 'profile':
         seeker_profile.main(user_info)
