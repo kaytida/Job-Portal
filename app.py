@@ -41,7 +41,8 @@ def main():
     # Language selection
     language_options = {
         "English": "en",
-        "Telugu": "te"
+        "Telugu": "te",
+        "Hindi": "hi"  # Added Hindi language option
     }
     selected_language = st.sidebar.selectbox("Choose Language", list(language_options.keys()))
     selected_language_code = language_options[selected_language]

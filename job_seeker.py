@@ -36,7 +36,7 @@ def main(user_info):
 
     # Sidebar
     with st.sidebar:
-        st.image("https://i.ibb.co/gjN0R5g/user.png", width=100)  # Replace with user's profile picture if available
+        st.image("Blank-Profile-Picture-1.webp", width=100)  # Replace with user's profile picture if available
         
         if st.button(f"{user_name}"):
             st.session_state['current_page'] = 'profile'
@@ -49,7 +49,7 @@ def main(user_info):
             st.session_state['current_page'] = 'jobs'
             st.experimental_rerun()
 
-        if st.button("Companies"):
+        if st.button("Analysis"):
             st.session_state['current_page'] = 'companies'
             st.experimental_rerun()
         
@@ -123,8 +123,6 @@ def main(user_info):
         <div class="header">
             <div></div>
             <div>
-                <img src="https://i.ibb.co/7jmyDSD/notifications.png" width="30">
-                <img src="https://i.ibb.co/gjN0R5g/user.png" width="30">
             </div>
         </div>
     """, unsafe_allow_html=True)

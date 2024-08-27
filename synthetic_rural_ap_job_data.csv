@@ -1,0 +1,501 @@
+Name,Age,Education,Applied Job Role,Skills,Location,Status of Job Application,Experience
+Naina Goud,22,High School,Teacher,"Retail, Computer Skills, Agriculture",Paderu,Accepted,4
+Aditya Goud,45,Diploma,Farmer,Computer Skills,Maredumilli,Rejected,18
+Aditya Rao,37,Intermediate,Teacher,"Electrical Work, Craftsmanship, Retail",Rampachodavaram,Accepted,7
+Aisha Rao,37,Intermediate,Shopkeeper,"Retail, Agriculture, Computer Skills",Paderu,Accepted,6
+Aarav Reddy,53,Intermediate,Electrician,"Agriculture, Driving",Chintur,Under Review,6
+Aarav Naidu,48,Diploma,Clerk,Computer Skills,Maredumilli,Under Review,15
+Vivaan Goud,47,Diploma,Farmer,"Retail, Craftsmanship, Agriculture",Seethampeta,Rejected,2
+Aisha Naidu,60,Diploma,Shopkeeper,"Electrical Work, Agriculture",Paderu,Accepted,2
+Vihaan Reddy,37,Diploma,Teacher,Craftsmanship,Paderu,Rejected,19
+Aarav Naidu,48,Undergraduate,Shopkeeper,Technical Repair,Paderu,Rejected,2
+Aarav Reddy,26,Intermediate,Weaver,Teaching,Paderu,Interview Scheduled,0
+Aarav Naidu,54,Diploma,Teacher,"Agriculture, Driving",Maredumilli,Accepted,9
+Naina Reddy,32,High School,Electrician,"Craftsmanship, Agriculture, Technical Repair",Chintur,Interview Scheduled,15
+Aisha Goud,47,High School,Teacher,Driving,Araku Valley,Pending,0
+Aarav Naidu,23,Intermediate,Electrician,"Teaching, Craftsmanship",Seethampeta,Interview Scheduled,17
+Aditya Rao,36,Intermediate,Shopkeeper,Technical Repair,Maredumilli,Accepted,19
+Ananya Goud,26,Diploma,Clerk,Teaching,Chintur,Interview Scheduled,5
+Naina Reddy,19,Intermediate,Weaver,"Craftsmanship, Teaching, Driving",Chintur,Rejected,19
+Aditya Naidu,46,Intermediate,Weaver,Agriculture,Rampachodavaram,Rejected,9
+Vihaan Goud,27,Graduate,Weaver,Agriculture,Maredumilli,Pending,7
+Aditi Goud,30,Diploma,Teacher,Craftsmanship,Paderu,Under Review,13
+Siya Goud,40,Intermediate,Mechanic,"Craftsmanship, Teaching",Maredumilli,Pending,18
+Riya Prasad,49,Intermediate,Driver,"Computer Skills, Craftsmanship, Technical Repair",Araku Valley,Under Review,8
+Aditya Reddy,21,Diploma,Mechanic,"Technical Repair, Teaching, Agriculture",Paderu,Accepted,14
+Ananya Naidu,24,Graduate,Farmer,"Driving, Electrical Work, Agriculture",Seethampeta,Rejected,19
+Aditi Goud,49,High School,Clerk,Technical Repair,Seethampeta,Pending,9
+Ananya Goud,38,Graduate,Farmer,"Technical Repair, Driving",Paderu,Pending,16
+Siya Goud,59,High School,Weaver,"Craftsmanship, Electrical Work, Driving",Paderu,Accepted,10
+Aditi Prasad,33,Diploma,Teacher,Electrical Work,Seethampeta,Pending,9
+Aarav Reddy,37,Diploma,Farmer,"Retail, Electrical Work",Chintur,Accepted,14
+Aisha Reddy,31,Undergraduate,Mechanic,Driving,Rampachodavaram,Pending,9
+Aditi Prasad,57,Graduate,Mechanic,"Teaching, Driving, Craftsmanship",Chintur,Pending,3
+Riya Goud,37,Graduate,Electrician,"Electrical Work, Teaching",Maredumilli,Rejected,12
+Naina Prasad,36,Intermediate,Farmer,"Agriculture, Driving",Araku Valley,Interview Scheduled,16
+Ananya Reddy,24,Undergraduate,Clerk,Driving,Chintur,Under Review,4
+Riya Prasad,26,Diploma,Teacher,Teaching,Araku Valley,Under Review,0
+Naina Prasad,44,High School,Shopkeeper,"Driving, Computer Skills",Paderu,Rejected,14
+Ananya Reddy,34,Graduate,Electrician,"Craftsmanship, Agriculture",Paderu,Pending,0
+Aisha Prasad,35,High School,Farmer,"Craftsmanship, Driving, Electrical Work",Araku Valley,Pending,12
+Aarav Goud,47,Diploma,Weaver,"Agriculture, Craftsmanship",Rampachodavaram,Interview Scheduled,2
+Riya Prasad,20,Graduate,Mechanic,"Electrical Work, Retail",Chintur,Rejected,7
+Naina Naidu,43,Undergraduate,Teacher,"Electrical Work, Teaching, Computer Skills",Rampachodavaram,Under Review,7
+Aisha Reddy,22,Intermediate,Driver,"Retail, Agriculture",Maredumilli,Under Review,3
+Aditi Rao,54,Intermediate,Farmer,Electrical Work,Araku Valley,Rejected,4
+Ananya Reddy,51,Undergraduate,Weaver,"Technical Repair, Electrical Work, Teaching",Maredumilli,Accepted,13
+Naina Naidu,58,Intermediate,Farmer,"Computer Skills, Electrical Work, Teaching",Paderu,Accepted,12
+Aditi Naidu,56,High School,Mechanic,"Electrical Work, Craftsmanship",Maredumilli,Interview Scheduled,4
+Siya Rao,43,High School,Clerk,Electrical Work,Araku Valley,Rejected,4
+Riya Naidu,20,Diploma,Clerk,"Retail, Agriculture",Seethampeta,Under Review,0
+Vihaan Reddy,36,Graduate,Teacher,"Retail, Craftsmanship, Technical Repair",Seethampeta,Pending,14
+Aditi Rao,35,Graduate,Weaver,"Driving, Agriculture",Araku Valley,Pending,18
+Vihaan Rao,44,Intermediate,Farmer,"Technical Repair, Craftsmanship",Chintur,Under Review,4
+Naina Reddy,42,Graduate,Shopkeeper,Agriculture,Chintur,Pending,12
+Riya Prasad,23,Graduate,Weaver,Driving,Maredumilli,Rejected,7
+Vihaan Goud,36,Intermediate,Mechanic,"Craftsmanship, Electrical Work, Agriculture",Paderu,Pending,14
+Vivaan Rao,58,Graduate,Teacher,"Electrical Work, Agriculture, Craftsmanship",Araku Valley,Under Review,0
+Aisha Goud,29,Undergraduate,Farmer,"Computer Skills, Craftsmanship, Agriculture",Seethampeta,Rejected,1
+Naina Goud,37,Diploma,Shopkeeper,Computer Skills,Rampachodavaram,Rejected,7
+Siya Goud,60,Diploma,Clerk,"Craftsmanship, Technical Repair, Electrical Work",Rampachodavaram,Under Review,18
+Riya Prasad,54,High School,Driver,"Craftsmanship, Electrical Work",Paderu,Under Review,2
+Aisha Prasad,24,Intermediate,Farmer,Teaching,Maredumilli,Rejected,3
+Riya Naidu,45,Intermediate,Driver,"Computer Skills, Electrical Work",Rampachodavaram,Accepted,19
+Vihaan Reddy,60,Intermediate,Shopkeeper,"Driving, Teaching, Retail",Chintur,Pending,8
+Vivaan Reddy,52,Undergraduate,Weaver,"Computer Skills, Agriculture",Seethampeta,Interview Scheduled,12
+Aarav Prasad,59,Undergraduate,Driver,"Craftsmanship, Agriculture",Araku Valley,Pending,0
+Aditi Prasad,25,Undergraduate,Driver,Retail,Paderu,Pending,17
+Ananya Reddy,36,Diploma,Clerk,"Technical Repair, Craftsmanship, Computer Skills",Rampachodavaram,Pending,12
+Vivaan Naidu,42,Graduate,Shopkeeper,Teaching,Paderu,Accepted,1
+Aditya Goud,35,Undergraduate,Farmer,"Computer Skills, Craftsmanship, Retail",Maredumilli,Rejected,20
+Naina Naidu,20,High School,Weaver,"Driving, Electrical Work",Chintur,Under Review,12
+Aarav Goud,46,Graduate,Weaver,"Teaching, Retail, Electrical Work",Paderu,Rejected,6
+Siya Goud,58,High School,Driver,"Driving, Teaching",Paderu,Accepted,9
+Aarav Reddy,23,High School,Teacher,"Computer Skills, Craftsmanship",Paderu,Rejected,3
+Vivaan Reddy,51,Diploma,Mechanic,Technical Repair,Paderu,Accepted,7
+Ananya Goud,57,Diploma,Mechanic,Electrical Work,Rampachodavaram,Rejected,12
+Vivaan Naidu,47,Diploma,Mechanic,"Driving, Craftsmanship, Electrical Work",Chintur,Rejected,16
+Siya Goud,30,Graduate,Weaver,"Technical Repair, Driving",Chintur,Rejected,3
+Aditya Reddy,38,Undergraduate,Driver,"Computer Skills, Agriculture, Technical Repair",Rampachodavaram,Pending,5
+Ananya Reddy,29,High School,Farmer,"Teaching, Agriculture, Technical Repair",Seethampeta,Rejected,18
+Aditi Rao,21,High School,Farmer,Agriculture,Seethampeta,Pending,4
+Siya Reddy,32,High School,Electrician,"Electrical Work, Craftsmanship, Computer Skills",Seethampeta,Accepted,7
+Aditi Prasad,31,Intermediate,Electrician,Agriculture,Seethampeta,Under Review,5
+Vivaan Naidu,19,Undergraduate,Teacher,Agriculture,Rampachodavaram,Rejected,8
+Aditi Prasad,51,High School,Mechanic,Computer Skills,Seethampeta,Rejected,9
+Aarav Goud,37,Undergraduate,Teacher,"Technical Repair, Agriculture, Teaching",Rampachodavaram,Rejected,11
+Aarav Naidu,24,Diploma,Shopkeeper,"Agriculture, Retail, Electrical Work",Chintur,Interview Scheduled,9
+Naina Goud,58,High School,Mechanic,Teaching,Araku Valley,Under Review,15
+Ananya Reddy,59,High School,Teacher,"Craftsmanship, Agriculture, Driving",Chintur,Accepted,10
+Naina Rao,36,Diploma,Shopkeeper,"Retail, Craftsmanship",Paderu,Pending,18
+Aarav Prasad,45,Graduate,Electrician,"Teaching, Electrical Work, Computer Skills",Seethampeta,Accepted,6
+Riya Rao,60,Graduate,Weaver,Craftsmanship,Maredumilli,Under Review,3
+Aditya Rao,48,Intermediate,Clerk,"Agriculture, Electrical Work, Driving",Seethampeta,Interview Scheduled,3
+Vivaan Rao,58,Diploma,Mechanic,"Computer Skills, Craftsmanship, Technical Repair",Paderu,Accepted,18
+Naina Goud,23,Undergraduate,Driver,Technical Repair,Seethampeta,Accepted,6
+Aisha Prasad,44,High School,Teacher,"Teaching, Electrical Work",Maredumilli,Under Review,11
+Riya Prasad,38,Diploma,Weaver,"Electrical Work, Agriculture, Computer Skills",Araku Valley,Pending,0
+Siya Goud,51,High School,Weaver,Driving,Seethampeta,Under Review,14
+Naina Goud,49,Graduate,Driver,"Agriculture, Driving",Rampachodavaram,Rejected,8
+Aisha Rao,27,Undergraduate,Mechanic,"Craftsmanship, Technical Repair",Maredumilli,Pending,10
+Ananya Naidu,29,Graduate,Clerk,Driving,Paderu,Rejected,17
+Aarav Reddy,48,Diploma,Clerk,Craftsmanship,Rampachodavaram,Under Review,12
+Naina Reddy,53,Graduate,Electrician,"Craftsmanship, Technical Repair, Driving",Chintur,Accepted,13
+Riya Reddy,31,Graduate,Teacher,Retail,Maredumilli,Under Review,7
+Aditya Goud,32,High School,Farmer,Electrical Work,Seethampeta,Interview Scheduled,14
+Aditya Naidu,39,Undergraduate,Clerk,"Driving, Agriculture, Technical Repair",Araku Valley,Pending,5
+Siya Reddy,42,Intermediate,Driver,"Craftsmanship, Retail, Driving",Araku Valley,Accepted,10
+Aditi Prasad,42,Intermediate,Clerk,"Retail, Computer Skills, Electrical Work",Rampachodavaram,Under Review,10
+Siya Goud,48,High School,Farmer,"Craftsmanship, Driving, Technical Repair",Maredumilli,Pending,11
+Naina Goud,49,Graduate,Shopkeeper,"Computer Skills, Driving",Maredumilli,Pending,5
+Aditya Naidu,22,Intermediate,Mechanic,"Technical Repair, Electrical Work, Craftsmanship",Rampachodavaram,Interview Scheduled,14
+Riya Reddy,57,Intermediate,Farmer,Computer Skills,Seethampeta,Under Review,5
+Vivaan Reddy,27,Intermediate,Teacher,Computer Skills,Araku Valley,Rejected,5
+Siya Reddy,32,High School,Shopkeeper,"Electrical Work, Agriculture",Rampachodavaram,Under Review,1
+Riya Goud,30,Diploma,Electrician,"Agriculture, Driving, Computer Skills",Araku Valley,Rejected,10
+Aditya Prasad,36,Diploma,Clerk,Teaching,Seethampeta,Accepted,5
+Siya Prasad,27,Graduate,Driver,Technical Repair,Araku Valley,Interview Scheduled,4
+Siya Reddy,38,Graduate,Electrician,"Driving, Retail, Computer Skills",Seethampeta,Pending,9
+Aisha Rao,35,Graduate,Farmer,"Computer Skills, Retail, Agriculture",Maredumilli,Interview Scheduled,7
+Vivaan Reddy,18,Undergraduate,Teacher,"Technical Repair, Driving",Paderu,Under Review,8
+Aditya Naidu,54,High School,Teacher,"Retail, Teaching, Driving",Chintur,Rejected,14
+Ananya Goud,60,Intermediate,Electrician,"Driving, Computer Skills, Technical Repair",Paderu,Rejected,2
+Aarav Prasad,20,High School,Farmer,Driving,Seethampeta,Interview Scheduled,17
+Vihaan Reddy,58,Diploma,Teacher,"Craftsmanship, Technical Repair, Computer Skills",Maredumilli,Interview Scheduled,20
+Aditya Reddy,56,Graduate,Clerk,"Retail, Craftsmanship",Chintur,Under Review,5
+Vihaan Prasad,38,Diploma,Electrician,"Teaching, Craftsmanship",Maredumilli,Interview Scheduled,20
+Naina Goud,56,Graduate,Electrician,Agriculture,Maredumilli,Interview Scheduled,17
+Aarav Goud,18,High School,Farmer,"Teaching, Craftsmanship",Seethampeta,Pending,3
+Aditya Rao,51,Intermediate,Clerk,Retail,Rampachodavaram,Accepted,20
+Aditya Rao,28,Diploma,Mechanic,"Computer Skills, Craftsmanship, Technical Repair",Seethampeta,Rejected,3
+Aditi Prasad,20,Undergraduate,Teacher,"Driving, Technical Repair",Paderu,Accepted,3
+Naina Prasad,20,Intermediate,Electrician,Electrical Work,Araku Valley,Pending,4
+Aisha Goud,44,Intermediate,Farmer,"Retail, Electrical Work, Craftsmanship",Seethampeta,Pending,15
+Riya Reddy,18,Diploma,Driver,"Electrical Work, Driving, Craftsmanship",Seethampeta,Under Review,10
+Ananya Goud,18,High School,Weaver,Electrical Work,Seethampeta,Accepted,10
+Aarav Naidu,24,Diploma,Shopkeeper,Retail,Araku Valley,Interview Scheduled,3
+Siya Naidu,37,Diploma,Driver,Computer Skills,Maredumilli,Rejected,3
+Riya Goud,59,High School,Driver,"Teaching, Computer Skills, Craftsmanship",Araku Valley,Rejected,10
+Aarav Rao,49,Graduate,Teacher,"Computer Skills, Technical Repair, Retail",Paderu,Pending,0
+Siya Goud,58,Diploma,Shopkeeper,Retail,Araku Valley,Pending,7
+Aarav Reddy,55,Intermediate,Mechanic,"Teaching, Agriculture, Retail",Rampachodavaram,Interview Scheduled,19
+Vihaan Reddy,58,Graduate,Shopkeeper,Craftsmanship,Maredumilli,Under Review,7
+Naina Rao,39,High School,Clerk,Craftsmanship,Araku Valley,Under Review,4
+Aditya Rao,25,Intermediate,Mechanic,"Computer Skills, Teaching, Retail",Araku Valley,Under Review,8
+Aditi Rao,25,Undergraduate,Clerk,"Agriculture, Technical Repair",Rampachodavaram,Interview Scheduled,15
+Naina Goud,38,High School,Electrician,"Agriculture, Computer Skills, Teaching",Rampachodavaram,Rejected,9
+Aisha Prasad,57,Intermediate,Driver,"Driving, Agriculture, Retail",Paderu,Under Review,13
+Vihaan Reddy,27,Diploma,Clerk,Technical Repair,Paderu,Pending,2
+Aisha Reddy,36,Graduate,Mechanic,Agriculture,Rampachodavaram,Rejected,17
+Naina Rao,41,Graduate,Mechanic,Retail,Paderu,Accepted,0
+Vivaan Rao,43,Intermediate,Shopkeeper,"Electrical Work, Computer Skills",Paderu,Interview Scheduled,13
+Ananya Goud,53,Intermediate,Weaver,Computer Skills,Maredumilli,Accepted,0
+Ananya Rao,47,Diploma,Mechanic,"Craftsmanship, Computer Skills",Paderu,Accepted,13
+Riya Goud,49,High School,Shopkeeper,"Agriculture, Craftsmanship",Seethampeta,Accepted,16
+Ananya Goud,23,Diploma,Farmer,"Retail, Agriculture",Maredumilli,Accepted,18
+Aisha Prasad,26,Diploma,Electrician,Teaching,Araku Valley,Interview Scheduled,18
+Naina Reddy,25,Intermediate,Teacher,"Craftsmanship, Technical Repair",Paderu,Rejected,12
+Vivaan Prasad,36,Graduate,Electrician,"Retail, Technical Repair",Araku Valley,Under Review,3
+Naina Rao,48,High School,Driver,"Agriculture, Computer Skills, Retail",Paderu,Pending,4
+Siya Prasad,34,Undergraduate,Weaver,"Agriculture, Craftsmanship, Technical Repair",Maredumilli,Interview Scheduled,18
+Aisha Reddy,32,Diploma,Farmer,Computer Skills,Araku Valley,Pending,12
+Ananya Prasad,24,Intermediate,Mechanic,Technical Repair,Maredumilli,Pending,12
+Vihaan Rao,37,High School,Driver,Computer Skills,Rampachodavaram,Under Review,0
+Aarav Reddy,31,Graduate,Clerk,"Agriculture, Craftsmanship",Chintur,Accepted,12
+Riya Prasad,22,Undergraduate,Electrician,"Technical Repair, Agriculture",Chintur,Pending,7
+Aisha Goud,27,High School,Shopkeeper,"Computer Skills, Craftsmanship",Paderu,Under Review,18
+Aditi Reddy,48,Diploma,Driver,Technical Repair,Seethampeta,Interview Scheduled,5
+Aditya Goud,50,Undergraduate,Clerk,"Technical Repair, Teaching, Computer Skills",Chintur,Rejected,5
+Aisha Naidu,35,High School,Driver,"Technical Repair, Teaching",Rampachodavaram,Rejected,15
+Aarav Naidu,23,Undergraduate,Farmer,Technical Repair,Maredumilli,Rejected,19
+Vihaan Naidu,47,High School,Clerk,Retail,Chintur,Interview Scheduled,10
+Aarav Goud,59,Undergraduate,Weaver,Retail,Maredumilli,Pending,19
+Riya Rao,46,High School,Weaver,Computer Skills,Chintur,Rejected,0
+Siya Reddy,27,Intermediate,Weaver,"Computer Skills, Technical Repair, Electrical Work",Paderu,Accepted,13
+Ananya Naidu,59,High School,Teacher,"Teaching, Computer Skills, Agriculture",Chintur,Pending,14
+Ananya Reddy,34,High School,Weaver,Retail,Araku Valley,Accepted,13
+Riya Prasad,44,Undergraduate,Weaver,"Technical Repair, Computer Skills",Araku Valley,Accepted,4
+Vivaan Reddy,24,Undergraduate,Driver,"Agriculture, Teaching, Technical Repair",Araku Valley,Rejected,15
+Riya Naidu,21,Diploma,Shopkeeper,"Electrical Work, Driving",Chintur,Pending,13
+Vihaan Reddy,32,Intermediate,Mechanic,Driving,Maredumilli,Pending,17
+Aarav Naidu,26,High School,Electrician,"Computer Skills, Driving, Craftsmanship",Araku Valley,Interview Scheduled,8
+Riya Goud,22,Diploma,Driver,Craftsmanship,Paderu,Under Review,12
+Vivaan Naidu,46,Graduate,Driver,"Technical Repair, Craftsmanship",Rampachodavaram,Pending,9
+Naina Rao,34,Intermediate,Electrician,Computer Skills,Chintur,Pending,19
+Aarav Goud,60,Undergraduate,Teacher,Craftsmanship,Maredumilli,Interview Scheduled,2
+Aditya Goud,39,Graduate,Farmer,"Craftsmanship, Agriculture, Computer Skills",Seethampeta,Pending,20
+Aditya Rao,57,Graduate,Mechanic,Agriculture,Chintur,Pending,17
+Ananya Rao,42,Diploma,Electrician,"Technical Repair, Craftsmanship",Paderu,Pending,12
+Naina Prasad,18,Graduate,Mechanic,"Technical Repair, Retail, Teaching",Chintur,Rejected,13
+Aarav Goud,23,High School,Teacher,Teaching,Maredumilli,Under Review,12
+Aditya Naidu,58,Intermediate,Farmer,Teaching,Paderu,Pending,20
+Vivaan Prasad,39,High School,Driver,Electrical Work,Chintur,Interview Scheduled,4
+Riya Goud,33,Undergraduate,Farmer,Driving,Rampachodavaram,Accepted,5
+Siya Naidu,26,Intermediate,Mechanic,"Driving, Agriculture",Seethampeta,Pending,9
+Vihaan Rao,39,High School,Electrician,"Teaching, Retail",Araku Valley,Rejected,18
+Aarav Prasad,32,High School,Mechanic,Retail,Paderu,Accepted,10
+Siya Reddy,26,Graduate,Farmer,Agriculture,Seethampeta,Rejected,20
+Aditya Naidu,33,Intermediate,Mechanic,"Electrical Work, Craftsmanship, Computer Skills",Paderu,Accepted,11
+Vihaan Reddy,34,High School,Electrician,Technical Repair,Seethampeta,Pending,9
+Riya Rao,60,Undergraduate,Driver,Retail,Paderu,Accepted,7
+Siya Rao,37,High School,Teacher,"Technical Repair, Electrical Work, Computer Skills",Maredumilli,Under Review,4
+Aisha Rao,18,Graduate,Farmer,Electrical Work,Chintur,Interview Scheduled,0
+Siya Prasad,34,Diploma,Shopkeeper,"Technical Repair, Driving, Agriculture",Paderu,Under Review,5
+Riya Naidu,23,Diploma,Clerk,"Teaching, Agriculture, Retail",Maredumilli,Rejected,19
+Aditi Naidu,50,Diploma,Mechanic,"Driving, Craftsmanship, Technical Repair",Maredumilli,Interview Scheduled,8
+Riya Reddy,32,High School,Shopkeeper,Teaching,Rampachodavaram,Interview Scheduled,20
+Siya Prasad,45,Intermediate,Teacher,Technical Repair,Seethampeta,Accepted,7
+Siya Reddy,35,Undergraduate,Farmer,"Retail, Computer Skills",Paderu,Pending,3
+Aisha Naidu,26,Graduate,Driver,"Electrical Work, Technical Repair",Rampachodavaram,Rejected,3
+Vihaan Rao,27,Undergraduate,Weaver,Retail,Araku Valley,Accepted,11
+Aisha Goud,37,Intermediate,Shopkeeper,"Driving, Electrical Work, Computer Skills",Rampachodavaram,Interview Scheduled,16
+Vivaan Reddy,29,Intermediate,Weaver,Driving,Chintur,Interview Scheduled,11
+Aarav Rao,30,Diploma,Shopkeeper,"Agriculture, Teaching, Technical Repair",Paderu,Interview Scheduled,7
+Aditi Reddy,55,Intermediate,Weaver,Technical Repair,Maredumilli,Interview Scheduled,2
+Naina Goud,57,Diploma,Clerk,"Retail, Agriculture, Teaching",Rampachodavaram,Rejected,12
+Aarav Goud,41,High School,Shopkeeper,"Agriculture, Computer Skills, Electrical Work",Seethampeta,Pending,10
+Aarav Reddy,55,Diploma,Farmer,Electrical Work,Seethampeta,Rejected,13
+Aisha Reddy,42,Undergraduate,Clerk,"Agriculture, Retail",Paderu,Interview Scheduled,12
+Riya Goud,48,High School,Shopkeeper,Driving,Maredumilli,Under Review,11
+Vihaan Goud,25,Graduate,Clerk,"Driving, Electrical Work",Chintur,Interview Scheduled,8
+Vihaan Reddy,40,Undergraduate,Weaver,"Retail, Teaching",Seethampeta,Pending,12
+Aditya Goud,19,High School,Clerk,"Driving, Computer Skills, Retail",Seethampeta,Rejected,4
+Ananya Rao,23,Diploma,Mechanic,"Technical Repair, Computer Skills, Teaching",Seethampeta,Rejected,14
+Aditi Goud,51,High School,Mechanic,"Retail, Electrical Work, Technical Repair",Seethampeta,Pending,16
+Riya Rao,42,Graduate,Teacher,"Teaching, Driving",Araku Valley,Accepted,16
+Aditi Rao,53,Intermediate,Shopkeeper,Electrical Work,Rampachodavaram,Under Review,12
+Naina Prasad,42,Undergraduate,Mechanic,"Driving, Computer Skills",Paderu,Interview Scheduled,9
+Vihaan Prasad,39,Undergraduate,Electrician,Craftsmanship,Seethampeta,Interview Scheduled,11
+Aditi Prasad,22,Graduate,Farmer,Teaching,Paderu,Accepted,2
+Riya Naidu,56,High School,Clerk,Driving,Paderu,Pending,14
+Naina Reddy,41,Undergraduate,Shopkeeper,Teaching,Maredumilli,Pending,11
+Vihaan Naidu,37,Diploma,Mechanic,"Electrical Work, Driving",Seethampeta,Under Review,2
+Aarav Reddy,57,Diploma,Teacher,Retail,Paderu,Interview Scheduled,6
+Siya Naidu,42,High School,Shopkeeper,Retail,Rampachodavaram,Pending,7
+Siya Prasad,33,High School,Clerk,Teaching,Paderu,Accepted,11
+Siya Prasad,25,Diploma,Shopkeeper,"Electrical Work, Driving, Craftsmanship",Paderu,Interview Scheduled,11
+Aarav Naidu,51,High School,Electrician,Retail,Seethampeta,Pending,18
+Aditya Naidu,58,Diploma,Teacher,Technical Repair,Seethampeta,Under Review,1
+Riya Rao,59,Graduate,Weaver,"Teaching, Retail, Technical Repair",Chintur,Accepted,13
+Naina Naidu,60,Graduate,Weaver,"Electrical Work, Retail",Chintur,Pending,6
+Aisha Prasad,39,Graduate,Electrician,"Electrical Work, Agriculture",Seethampeta,Interview Scheduled,2
+Aditi Goud,25,Diploma,Clerk,"Technical Repair, Craftsmanship, Computer Skills",Chintur,Accepted,2
+Naina Reddy,36,High School,Shopkeeper,"Technical Repair, Retail, Agriculture",Rampachodavaram,Accepted,1
+Siya Reddy,28,Intermediate,Farmer,"Electrical Work, Technical Repair, Retail",Maredumilli,Under Review,9
+Aarav Rao,44,High School,Mechanic,"Retail, Craftsmanship, Agriculture",Seethampeta,Under Review,11
+Aisha Naidu,18,Graduate,Teacher,Teaching,Paderu,Accepted,2
+Naina Goud,21,Undergraduate,Teacher,"Technical Repair, Retail, Driving",Seethampeta,Rejected,1
+Aisha Goud,18,Graduate,Driver,"Electrical Work, Teaching, Agriculture",Araku Valley,Interview Scheduled,11
+Ananya Rao,59,Undergraduate,Driver,"Retail, Electrical Work, Craftsmanship",Rampachodavaram,Under Review,19
+Aditi Naidu,53,Diploma,Electrician,"Computer Skills, Technical Repair",Maredumilli,Pending,10
+Vihaan Goud,36,High School,Clerk,"Agriculture, Teaching, Retail",Maredumilli,Interview Scheduled,3
+Siya Reddy,40,High School,Electrician,"Electrical Work, Agriculture",Araku Valley,Accepted,1
+Vivaan Reddy,23,Undergraduate,Clerk,Computer Skills,Maredumilli,Accepted,10
+Aarav Prasad,28,Intermediate,Clerk,Computer Skills,Paderu,Pending,15
+Riya Prasad,54,Diploma,Farmer,"Technical Repair, Teaching",Maredumilli,Pending,15
+Aditi Goud,31,High School,Teacher,"Driving, Teaching, Computer Skills",Rampachodavaram,Interview Scheduled,18
+Riya Rao,57,Intermediate,Electrician,Technical Repair,Rampachodavaram,Under Review,11
+Aarav Reddy,51,High School,Driver,"Technical Repair, Electrical Work, Retail",Araku Valley,Under Review,5
+Riya Prasad,30,High School,Teacher,"Electrical Work, Driving, Teaching",Paderu,Accepted,6
+Aarav Naidu,48,Undergraduate,Weaver,Driving,Rampachodavaram,Rejected,14
+Aarav Naidu,45,Diploma,Driver,"Driving, Craftsmanship",Paderu,Rejected,18
+Siya Goud,26,High School,Electrician,Driving,Seethampeta,Under Review,4
+Naina Rao,24,High School,Shopkeeper,"Driving, Computer Skills, Teaching",Chintur,Interview Scheduled,6
+Riya Rao,43,High School,Driver,"Teaching, Craftsmanship",Paderu,Under Review,8
+Aarav Naidu,22,High School,Farmer,"Technical Repair, Craftsmanship",Seethampeta,Accepted,15
+Vivaan Naidu,42,Graduate,Weaver,"Electrical Work, Retail",Seethampeta,Under Review,3
+Ananya Prasad,39,Graduate,Clerk,Computer Skills,Araku Valley,Rejected,16
+Siya Naidu,58,High School,Mechanic,"Teaching, Craftsmanship",Seethampeta,Pending,8
+Vivaan Rao,38,Diploma,Mechanic,"Teaching, Craftsmanship, Computer Skills",Chintur,Interview Scheduled,16
+Vihaan Naidu,49,Intermediate,Shopkeeper,Computer Skills,Maredumilli,Under Review,11
+Vihaan Goud,48,Diploma,Clerk,Driving,Maredumilli,Interview Scheduled,12
+Aisha Naidu,28,Graduate,Driver,Retail,Maredumilli,Interview Scheduled,17
+Aisha Prasad,51,Undergraduate,Driver,"Electrical Work, Computer Skills",Chintur,Accepted,1
+Ananya Reddy,34,Diploma,Electrician,"Electrical Work, Computer Skills, Agriculture",Seethampeta,Accepted,15
+Naina Naidu,19,Diploma,Farmer,"Computer Skills, Agriculture",Paderu,Pending,3
+Siya Goud,46,Undergraduate,Teacher,"Retail, Craftsmanship, Agriculture",Rampachodavaram,Accepted,12
+Ananya Naidu,35,Undergraduate,Driver,"Craftsmanship, Driving",Chintur,Interview Scheduled,19
+Aisha Goud,55,Undergraduate,Farmer,"Agriculture, Retail, Technical Repair",Seethampeta,Interview Scheduled,14
+Vivaan Goud,29,Diploma,Electrician,"Agriculture, Craftsmanship, Driving",Maredumilli,Interview Scheduled,14
+Siya Reddy,60,Graduate,Clerk,"Driving, Retail, Computer Skills",Rampachodavaram,Pending,15
+Riya Goud,51,Diploma,Weaver,"Retail, Computer Skills, Technical Repair",Rampachodavaram,Under Review,10
+Aisha Goud,34,Intermediate,Teacher,"Agriculture, Craftsmanship, Technical Repair",Paderu,Accepted,7
+Aisha Naidu,21,Graduate,Teacher,"Technical Repair, Computer Skills, Craftsmanship",Paderu,Interview Scheduled,15
+Vivaan Reddy,47,High School,Weaver,"Teaching, Electrical Work",Paderu,Rejected,1
+Vivaan Prasad,28,High School,Electrician,Teaching,Chintur,Under Review,3
+Naina Reddy,18,Intermediate,Teacher,Driving,Paderu,Pending,13
+Aditi Rao,43,High School,Weaver,"Technical Repair, Agriculture, Electrical Work",Maredumilli,Under Review,11
+Aisha Goud,26,Diploma,Teacher,"Retail, Computer Skills",Araku Valley,Pending,4
+Aditi Naidu,32,Intermediate,Driver,Craftsmanship,Maredumilli,Pending,11
+Naina Naidu,58,Intermediate,Farmer,"Craftsmanship, Computer Skills, Agriculture",Chintur,Pending,3
+Riya Prasad,51,Undergraduate,Teacher,"Retail, Teaching",Seethampeta,Accepted,9
+Vihaan Naidu,23,Undergraduate,Weaver,"Agriculture, Electrical Work, Technical Repair",Chintur,Under Review,11
+Vivaan Reddy,49,High School,Driver,"Driving, Electrical Work",Chintur,Under Review,12
+Naina Rao,42,Graduate,Driver,Retail,Rampachodavaram,Accepted,8
+Ananya Goud,60,Diploma,Shopkeeper,"Driving, Technical Repair, Computer Skills",Chintur,Accepted,19
+Naina Reddy,30,Undergraduate,Electrician,"Craftsmanship, Agriculture, Technical Repair",Maredumilli,Rejected,5
+Aditya Prasad,58,Graduate,Weaver,"Agriculture, Teaching",Seethampeta,Pending,7
+Aditi Rao,40,Undergraduate,Teacher,"Electrical Work, Retail, Craftsmanship",Paderu,Rejected,10
+Vihaan Goud,36,Diploma,Mechanic,"Craftsmanship, Driving",Araku Valley,Accepted,11
+Vivaan Prasad,49,High School,Electrician,"Electrical Work, Retail",Seethampeta,Accepted,8
+Riya Rao,19,Undergraduate,Weaver,"Teaching, Retail, Driving",Araku Valley,Interview Scheduled,0
+Aarav Prasad,57,Intermediate,Clerk,"Teaching, Agriculture, Electrical Work",Araku Valley,Rejected,12
+Aditi Naidu,51,Undergraduate,Farmer,Craftsmanship,Seethampeta,Accepted,2
+Aditi Naidu,58,Diploma,Driver,Computer Skills,Maredumilli,Under Review,18
+Naina Reddy,34,High School,Electrician,Electrical Work,Paderu,Accepted,3
+Vivaan Naidu,38,Intermediate,Driver,"Technical Repair, Computer Skills",Paderu,Accepted,3
+Aarav Rao,54,Diploma,Shopkeeper,"Electrical Work, Agriculture, Technical Repair",Chintur,Pending,17
+Aarav Reddy,18,Diploma,Weaver,"Computer Skills, Agriculture, Retail",Araku Valley,Under Review,5
+Ananya Reddy,27,Undergraduate,Electrician,Craftsmanship,Chintur,Rejected,11
+Siya Prasad,27,Undergraduate,Driver,"Technical Repair, Agriculture, Computer Skills",Araku Valley,Rejected,17
+Aditya Rao,29,Graduate,Clerk,Retail,Maredumilli,Rejected,19
+Ananya Goud,53,Intermediate,Mechanic,"Agriculture, Electrical Work",Chintur,Pending,15
+Aditi Goud,40,Undergraduate,Weaver,Technical Repair,Araku Valley,Accepted,6
+Ananya Rao,52,Graduate,Teacher,"Agriculture, Electrical Work",Rampachodavaram,Interview Scheduled,18
+Riya Rao,45,High School,Electrician,Electrical Work,Seethampeta,Rejected,7
+Aisha Goud,18,High School,Mechanic,Craftsmanship,Paderu,Accepted,12
+Naina Prasad,54,Undergraduate,Electrician,"Electrical Work, Teaching",Chintur,Pending,12
+Vihaan Goud,22,Undergraduate,Weaver,"Computer Skills, Agriculture",Chintur,Pending,1
+Aisha Rao,29,Undergraduate,Weaver,"Technical Repair, Driving",Araku Valley,Pending,9
+Vivaan Naidu,26,Diploma,Farmer,"Teaching, Agriculture",Maredumilli,Rejected,5
+Aisha Goud,31,High School,Teacher,"Teaching, Technical Repair",Maredumilli,Under Review,18
+Aarav Naidu,31,Diploma,Driver,"Technical Repair, Craftsmanship",Maredumilli,Rejected,17
+Aditya Reddy,51,Intermediate,Clerk,"Technical Repair, Craftsmanship",Chintur,Accepted,15
+Naina Rao,31,Diploma,Weaver,"Craftsmanship, Computer Skills",Araku Valley,Under Review,20
+Naina Goud,46,Diploma,Weaver,Craftsmanship,Maredumilli,Under Review,18
+Siya Goud,33,Diploma,Clerk,"Craftsmanship, Technical Repair",Araku Valley,Pending,1
+Vivaan Naidu,23,Intermediate,Weaver,"Computer Skills, Technical Repair, Electrical Work",Araku Valley,Accepted,1
+Naina Goud,36,Graduate,Clerk,"Technical Repair, Teaching",Paderu,Rejected,17
+Siya Rao,35,Diploma,Teacher,"Agriculture, Retail",Chintur,Under Review,12
+Vihaan Goud,43,Undergraduate,Farmer,Craftsmanship,Rampachodavaram,Pending,17
+Vihaan Prasad,52,Diploma,Shopkeeper,"Agriculture, Teaching, Computer Skills",Araku Valley,Rejected,15
+Vivaan Prasad,31,Graduate,Electrician,"Technical Repair, Retail, Electrical Work",Chintur,Interview Scheduled,2
+Aarav Prasad,26,Intermediate,Weaver,"Technical Repair, Driving",Araku Valley,Pending,4
+Ananya Prasad,57,Graduate,Shopkeeper,"Electrical Work, Agriculture, Computer Skills",Araku Valley,Accepted,2
+Aisha Rao,29,Undergraduate,Shopkeeper,Technical Repair,Araku Valley,Rejected,20
+Aditya Rao,30,Intermediate,Mechanic,"Electrical Work, Craftsmanship",Chintur,Rejected,0
+Riya Goud,29,Intermediate,Weaver,"Computer Skills, Driving",Chintur,Interview Scheduled,16
+Vihaan Goud,30,Diploma,Farmer,"Driving, Technical Repair, Retail",Chintur,Under Review,1
+Ananya Goud,30,Graduate,Teacher,"Teaching, Retail",Chintur,Rejected,2
+Aditi Goud,45,Intermediate,Clerk,Technical Repair,Maredumilli,Pending,10
+Vivaan Goud,51,Graduate,Clerk,Agriculture,Rampachodavaram,Interview Scheduled,17
+Aditi Prasad,18,Graduate,Clerk,"Computer Skills, Craftsmanship",Seethampeta,Under Review,0
+Naina Prasad,41,High School,Farmer,Retail,Paderu,Interview Scheduled,12
+Vivaan Rao,60,Intermediate,Mechanic,Electrical Work,Paderu,Rejected,3
+Aarav Goud,32,Intermediate,Shopkeeper,"Teaching, Craftsmanship, Computer Skills",Seethampeta,Under Review,20
+Siya Naidu,52,Graduate,Farmer,Driving,Maredumilli,Accepted,19
+Vivaan Prasad,31,Intermediate,Electrician,"Driving, Electrical Work",Seethampeta,Under Review,14
+Aarav Rao,52,Undergraduate,Shopkeeper,Craftsmanship,Seethampeta,Accepted,18
+Aarav Goud,44,Diploma,Mechanic,"Retail, Agriculture",Chintur,Interview Scheduled,8
+Vihaan Naidu,53,High School,Farmer,Driving,Araku Valley,Accepted,17
+Riya Goud,50,Diploma,Clerk,"Driving, Technical Repair",Rampachodavaram,Under Review,4
+Ananya Prasad,44,Intermediate,Weaver,"Technical Repair, Agriculture",Maredumilli,Under Review,13
+Aditya Goud,29,Graduate,Teacher,"Craftsmanship, Technical Repair, Agriculture",Chintur,Accepted,15
+Vivaan Reddy,37,Undergraduate,Farmer,"Craftsmanship, Retail, Teaching",Chintur,Interview Scheduled,14
+Aditya Naidu,41,Undergraduate,Mechanic,Agriculture,Maredumilli,Under Review,4
+Siya Naidu,33,High School,Clerk,Driving,Seethampeta,Interview Scheduled,1
+Siya Goud,44,Undergraduate,Electrician,"Computer Skills, Teaching, Retail",Chintur,Interview Scheduled,12
+Aditi Rao,46,Undergraduate,Weaver,Teaching,Rampachodavaram,Pending,2
+Siya Prasad,30,High School,Weaver,Retail,Seethampeta,Interview Scheduled,0
+Aarav Naidu,23,Intermediate,Teacher,"Computer Skills, Technical Repair",Paderu,Pending,16
+Vivaan Goud,36,High School,Weaver,"Computer Skills, Technical Repair, Craftsmanship",Araku Valley,Interview Scheduled,19
+Siya Goud,36,Graduate,Electrician,"Driving, Computer Skills",Maredumilli,Interview Scheduled,15
+Naina Rao,37,Undergraduate,Electrician,Electrical Work,Rampachodavaram,Pending,10
+Siya Naidu,57,Undergraduate,Mechanic,Teaching,Paderu,Rejected,9
+Aditya Reddy,32,Diploma,Weaver,Agriculture,Chintur,Pending,11
+Aarav Prasad,36,Intermediate,Shopkeeper,"Driving, Craftsmanship, Agriculture",Chintur,Pending,9
+Vihaan Naidu,49,Graduate,Clerk,"Craftsmanship, Technical Repair",Chintur,Pending,10
+Aditi Rao,57,Undergraduate,Weaver,"Driving, Retail",Seethampeta,Interview Scheduled,2
+Riya Prasad,40,High School,Farmer,"Computer Skills, Electrical Work, Retail",Rampachodavaram,Pending,18
+Ananya Naidu,47,Diploma,Electrician,Agriculture,Paderu,Rejected,13
+Vihaan Prasad,18,Intermediate,Driver,"Technical Repair, Retail, Teaching",Maredumilli,Under Review,6
+Vivaan Rao,53,Intermediate,Farmer,Electrical Work,Maredumilli,Pending,18
+Aarav Naidu,57,Intermediate,Clerk,"Technical Repair, Driving, Agriculture",Maredumilli,Rejected,19
+Ananya Naidu,53,Intermediate,Shopkeeper,"Agriculture, Driving, Technical Repair",Maredumilli,Under Review,7
+Aisha Goud,45,Intermediate,Clerk,"Retail, Craftsmanship, Technical Repair",Araku Valley,Under Review,0
+Aisha Reddy,55,High School,Farmer,"Craftsmanship, Driving",Maredumilli,Under Review,3
+Riya Goud,24,Graduate,Shopkeeper,"Driving, Teaching",Seethampeta,Rejected,17
+Vihaan Naidu,55,Intermediate,Mechanic,"Driving, Technical Repair",Seethampeta,Rejected,4
+Vivaan Reddy,59,Graduate,Farmer,Driving,Paderu,Under Review,19
+Siya Goud,40,Undergraduate,Weaver,Craftsmanship,Maredumilli,Pending,7
+Aditi Goud,34,Intermediate,Driver,"Driving, Computer Skills",Paderu,Under Review,18
+Vihaan Prasad,23,High School,Electrician,"Computer Skills, Teaching",Chintur,Interview Scheduled,4
+Naina Naidu,46,Intermediate,Clerk,"Retail, Electrical Work",Maredumilli,Interview Scheduled,5
+Siya Rao,59,Diploma,Electrician,"Driving, Computer Skills, Electrical Work",Paderu,Under Review,20
+Ananya Rao,39,Graduate,Clerk,"Teaching, Agriculture, Driving",Chintur,Under Review,7
+Aisha Reddy,54,Diploma,Electrician,"Computer Skills, Electrical Work",Rampachodavaram,Pending,5
+Siya Prasad,40,High School,Clerk,Agriculture,Maredumilli,Interview Scheduled,8
+Vivaan Goud,36,Diploma,Clerk,"Retail, Computer Skills, Driving",Rampachodavaram,Accepted,20
+Aisha Prasad,32,Undergraduate,Driver,Electrical Work,Maredumilli,Accepted,18
+Aditya Goud,40,Undergraduate,Weaver,Electrical Work,Chintur,Under Review,2
+Riya Goud,54,Intermediate,Electrician,"Technical Repair, Craftsmanship, Agriculture",Rampachodavaram,Interview Scheduled,10
+Aditi Reddy,21,Graduate,Farmer,"Retail, Teaching",Seethampeta,Rejected,12
+Ananya Prasad,35,Diploma,Teacher,"Craftsmanship, Agriculture, Retail",Rampachodavaram,Pending,2
+Aditya Reddy,51,High School,Shopkeeper,"Retail, Computer Skills, Technical Repair",Seethampeta,Accepted,15
+Aarav Rao,28,Diploma,Farmer,Driving,Chintur,Interview Scheduled,9
+Aditi Reddy,29,Undergraduate,Driver,"Driving, Computer Skills",Araku Valley,Under Review,5
+Siya Rao,21,Diploma,Farmer,"Agriculture, Driving",Araku Valley,Pending,7
+Aditya Reddy,50,Intermediate,Farmer,"Agriculture, Technical Repair, Retail",Maredumilli,Rejected,3
+Aarav Reddy,50,High School,Clerk,Teaching,Araku Valley,Interview Scheduled,6
+Aisha Reddy,36,Intermediate,Teacher,"Retail, Computer Skills",Rampachodavaram,Pending,5
+Ananya Prasad,26,Diploma,Farmer,"Teaching, Retail, Craftsmanship",Seethampeta,Interview Scheduled,19
+Ananya Goud,57,High School,Weaver,"Craftsmanship, Technical Repair",Maredumilli,Under Review,14
+Riya Naidu,22,High School,Weaver,"Teaching, Craftsmanship, Driving",Maredumilli,Rejected,6
+Aditi Goud,53,High School,Mechanic,Electrical Work,Maredumilli,Interview Scheduled,4
+Aditi Rao,33,Graduate,Shopkeeper,"Agriculture, Electrical Work, Craftsmanship",Rampachodavaram,Under Review,17
+Riya Goud,19,Graduate,Farmer,"Driving, Technical Repair",Seethampeta,Under Review,10
+Riya Goud,36,Diploma,Driver,Electrical Work,Seethampeta,Rejected,18
+Vivaan Naidu,27,Graduate,Farmer,"Teaching, Craftsmanship",Paderu,Accepted,13
+Aarav Reddy,59,Diploma,Driver,Driving,Araku Valley,Accepted,20
+Siya Prasad,23,Diploma,Teacher,Agriculture,Seethampeta,Rejected,17
+Vihaan Prasad,26,High School,Shopkeeper,Teaching,Chintur,Under Review,16
+Vihaan Rao,21,Graduate,Mechanic,Electrical Work,Paderu,Rejected,8
+Vivaan Rao,37,Undergraduate,Clerk,"Teaching, Retail",Chintur,Accepted,15
+Aarav Rao,31,Diploma,Clerk,"Electrical Work, Retail",Paderu,Under Review,0
+Vihaan Naidu,34,Diploma,Clerk,"Technical Repair, Agriculture, Retail",Seethampeta,Interview Scheduled,5
+Aisha Prasad,42,Graduate,Clerk,"Craftsmanship, Computer Skills",Araku Valley,Rejected,14
+Riya Rao,28,Intermediate,Teacher,Craftsmanship,Paderu,Interview Scheduled,17
+Vihaan Reddy,56,High School,Farmer,"Electrical Work, Driving",Paderu,Pending,14
+Ananya Naidu,45,Diploma,Farmer,"Agriculture, Technical Repair",Chintur,Accepted,4
+Aarav Reddy,47,Intermediate,Teacher,"Computer Skills, Electrical Work",Seethampeta,Pending,11
+Ananya Goud,50,Intermediate,Teacher,Teaching,Maredumilli,Interview Scheduled,15
+Naina Goud,35,Diploma,Shopkeeper,Craftsmanship,Maredumilli,Accepted,6
+Riya Naidu,58,High School,Driver,"Retail, Computer Skills, Driving",Araku Valley,Pending,4
+Aisha Goud,22,Graduate,Mechanic,"Technical Repair, Electrical Work",Seethampeta,Pending,19
+Ananya Prasad,30,Graduate,Driver,Driving,Paderu,Pending,6
+Siya Naidu,37,Undergraduate,Weaver,"Technical Repair, Driving, Computer Skills",Paderu,Accepted,18
+Ananya Naidu,21,Diploma,Farmer,Driving,Chintur,Pending,20
+Ananya Rao,34,Graduate,Farmer,Agriculture,Rampachodavaram,Under Review,14
+Aditi Naidu,36,Intermediate,Electrician,"Driving, Computer Skills",Paderu,Accepted,2
+Aditya Rao,34,High School,Weaver,Agriculture,Maredumilli,Rejected,1
+Aditya Rao,34,High School,Weaver,Computer Skills,Paderu,Under Review,8
+Siya Prasad,22,High School,Clerk,Computer Skills,Paderu,Rejected,8
+Riya Rao,19,Undergraduate,Clerk,"Craftsmanship, Teaching",Seethampeta,Accepted,1
+Siya Rao,52,Undergraduate,Mechanic,"Computer Skills, Teaching, Electrical Work",Araku Valley,Pending,12
+Siya Reddy,55,Undergraduate,Shopkeeper,"Computer Skills, Craftsmanship",Seethampeta,Pending,14
+Ananya Naidu,46,Undergraduate,Shopkeeper,"Electrical Work, Teaching",Paderu,Rejected,4
+Aisha Naidu,31,Undergraduate,Mechanic,"Electrical Work, Retail, Computer Skills",Araku Valley,Rejected,19
+Aarav Naidu,57,Graduate,Farmer,"Retail, Agriculture, Electrical Work",Chintur,Interview Scheduled,0
+Siya Naidu,33,Diploma,Electrician,"Retail, Agriculture, Driving",Maredumilli,Interview Scheduled,6
+Riya Goud,32,Diploma,Farmer,"Computer Skills, Technical Repair",Seethampeta,Pending,19
+Naina Goud,35,Graduate,Weaver,"Driving, Teaching, Agriculture",Seethampeta,Under Review,2
+Ananya Goud,55,Undergraduate,Teacher,"Electrical Work, Driving, Retail",Rampachodavaram,Under Review,0
+Siya Prasad,39,Diploma,Electrician,Teaching,Maredumilli,Interview Scheduled,13
+Ananya Goud,52,Undergraduate,Teacher,Driving,Araku Valley,Rejected,8
+Vivaan Goud,26,Undergraduate,Mechanic,Electrical Work,Paderu,Rejected,11
+Aisha Naidu,32,Intermediate,Farmer,"Agriculture, Electrical Work",Paderu,Pending,3
+Aditi Reddy,21,Diploma,Shopkeeper,"Retail, Electrical Work",Chintur,Accepted,12
+Riya Prasad,32,High School,Driver,Driving,Maredumilli,Interview Scheduled,18
+Aisha Naidu,37,Diploma,Electrician,"Teaching, Craftsmanship",Paderu,Under Review,14
+Vivaan Prasad,26,Graduate,Farmer,"Teaching, Agriculture, Driving",Paderu,Rejected,18
+Siya Rao,47,Undergraduate,Weaver,"Agriculture, Electrical Work, Technical Repair",Rampachodavaram,Accepted,1
+Naina Goud,49,Diploma,Teacher,"Technical Repair, Electrical Work, Computer Skills",Seethampeta,Under Review,15
+Vihaan Prasad,49,Graduate,Driver,"Teaching, Electrical Work, Technical Repair",Araku Valley,Interview Scheduled,14
+Siya Reddy,57,Undergraduate,Shopkeeper,"Technical Repair, Driving, Computer Skills",Rampachodavaram,Accepted,4
+Aditi Prasad,54,Undergraduate,Shopkeeper,Retail,Seethampeta,Accepted,12
+Vihaan Naidu,21,High School,Teacher,"Agriculture, Computer Skills",Paderu,Under Review,9
+Aditya Goud,41,Undergraduate,Weaver,"Electrical Work, Technical Repair, Craftsmanship",Seethampeta,Pending,9
+Siya Prasad,39,Graduate,Shopkeeper,Computer Skills,Rampachodavaram,Rejected,20
+Aarav Prasad,26,Diploma,Farmer,"Computer Skills, Agriculture, Technical Repair",Seethampeta,Accepted,13
+Aisha Goud,22,Diploma,Electrician,Agriculture,Seethampeta,Accepted,1
+Naina Rao,60,Diploma,Electrician,Technical Repair,Chintur,Pending,11
+Aditi Rao,51,Diploma,Farmer,Teaching,Rampachodavaram,Pending,10
+Aarav Naidu,28,Graduate,Weaver,"Craftsmanship, Retail",Chintur,Rejected,10
+Siya Goud,39,High School,Electrician,"Driving, Agriculture, Technical Repair",Chintur,Interview Scheduled,4
+Vivaan Naidu,60,Undergraduate,Shopkeeper,"Computer Skills, Electrical Work",Seethampeta,Accepted,19
+Siya Naidu,51,Diploma,Weaver,"Agriculture, Computer Skills, Driving",Seethampeta,Pending,7
+Aditi Naidu,38,High School,Electrician,"Driving, Teaching, Retail",Maredumilli,Accepted,20
+Aarav Goud,21,Undergraduate,Weaver,Electrical Work,Araku Valley,Rejected,20
+Aarav Goud,23,Undergraduate,Electrician,Computer Skills,Seethampeta,Rejected,14
+Riya Goud,29,High School,Teacher,Driving,Chintur,Under Review,5
+Siya Prasad,51,High School,Weaver,"Technical Repair, Retail, Electrical Work",Araku Valley,Interview Scheduled,18
+Vihaan Prasad,28,Undergraduate,Driver,"Computer Skills, Technical Repair, Agriculture",Chintur,Pending,4
+Vivaan Prasad,40,Diploma,Teacher,"Electrical Work, Technical Repair",Chintur,Under Review,15
+Aditi Prasad,19,Graduate,Teacher,"Technical Repair, Craftsmanship, Retail",Chintur,Accepted,12
+Naina Prasad,22,Graduate,Shopkeeper,"Agriculture, Teaching, Retail",Seethampeta,Accepted,0
+Aditi Naidu,22,High School,Farmer,"Agriculture, Technical Repair, Retail",Rampachodavaram,Accepted,19
+Ananya Naidu,51,High School,Driver,"Computer Skills, Teaching",Araku Valley,Interview Scheduled,16
+Naina Prasad,26,Graduate,Driver,"Craftsmanship, Driving, Retail",Araku Valley,Accepted,7
+Ananya Goud,54,Intermediate,Shopkeeper,"Computer Skills, Craftsmanship",Rampachodavaram,Pending,19
+Aisha Prasad,48,High School,Electrician,"Computer Skills, Craftsmanship, Teaching",Chintur,Interview Scheduled,14
+Aisha Rao,55,High School,Shopkeeper,Electrical Work,Seethampeta,Accepted,18
+Riya Rao,55,Diploma,Driver,"Craftsmanship, Teaching, Agriculture",Paderu,Interview Scheduled,3
+Ananya Prasad,41,Intermediate,Teacher,Electrical Work,Seethampeta,Under Review,16
+Aditya Prasad,38,High School,Electrician,"Technical Repair, Retail",Maredumilli,Accepted,20
+Riya Reddy,35,Graduate,Teacher,Computer Skills,Araku Valley,Rejected,14
+Riya Prasad,52,Intermediate,Teacher,Craftsmanship,Araku Valley,Under Review,19
+Naina Goud,43,Intermediate,Mechanic,Craftsmanship,Araku Valley,Accepted,3
+Siya Reddy,31,Graduate,Teacher,"Agriculture, Computer Skills, Retail",Chintur,Accepted,18
+Vihaan Prasad,52,High School,Clerk,"Technical Repair, Craftsmanship",Seethampeta,Accepted,13
+Vihaan Rao,57,Undergraduate,Teacher,"Teaching, Craftsmanship, Computer Skills",Seethampeta,Under Review,3
+Vivaan Prasad,44,Graduate,Farmer,"Agriculture, Craftsmanship",Seethampeta,Interview Scheduled,11
+Ananya Prasad,18,Diploma,Teacher,Technical Repair,Rampachodavaram,Rejected,6
+Aisha Rao,25,Diploma,Farmer,"Retail, Driving, Teaching",Chintur,Accepted,0
+Riya Reddy,49,Graduate,Electrician,"Technical Repair, Computer Skills",Maredumilli,Pending,13
+Aarav Goud,45,Diploma,Farmer,Teaching,Araku Valley,Under Review,20
+Aarav Reddy,29,High School,Teacher,"Driving, Agriculture, Retail",Araku Valley,Rejected,9
+Aisha Reddy,49,Graduate,Clerk,"Computer Skills, Teaching",Maredumilli,Interview Scheduled,2
+Vivaan Prasad,30,Undergraduate,Teacher,"Retail, Teaching, Computer Skills",Paderu,Accepted,9
+Naina Naidu,21,Graduate,Shopkeeper,Teaching,Araku Valley,Rejected,20
+Vihaan Prasad,38,High School,Shopkeeper,Retail,Chintur,Rejected,4
+Riya Goud,29,Intermediate,Driver,"Agriculture, Technical Repair, Teaching",Paderu,Accepted,13
