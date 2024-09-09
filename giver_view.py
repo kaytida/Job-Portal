@@ -12,14 +12,16 @@ def connect_to_db():
     return connection
 
 # Function to retrieve and display jobs
-def view_jobs():
+def view_jobs(user_info):
     conn = None  # Initialize conn to None
     try:
         conn = connect_to_db()
         cursor = conn.cursor()
-        query = "SELECT company, role, jobDescription, skillsrequired, jobtype, ctc FROM JobsGroup4"
-        cursor.execute(query)
+        user_id = user_info[0]  # Assuming user_info contains the logged-in user info and the first element is the user ID
+        query = "SELECT company, role, jobDescription, skillsrequired, jobtype, ctc FROM JobsGroup4 WHERE createdBy = %s"
+        cursor.execute(query, (user_id,))
         jobs = cursor.fetchall()
+
 
         if not jobs:
             st.warning("No jobs found.")

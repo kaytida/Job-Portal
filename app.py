@@ -67,7 +67,7 @@ def main():
         if st.session_state['role'] == "job_seeker":
             job_seeker.main(st.session_state['user_info'])
         elif st.session_state['role'] == "job_giver":
-            job_giver.main()
+            job_giver.main(st.session_state['user_info'])
         elif st.session_state['role'] == "admin":
             admin.main()
 

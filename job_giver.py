@@ -14,16 +14,16 @@ def connect_to_db():
     return connection
 
 # Function to add a new job posting
-def post_job(company, role, job_description, skills_required, job_type, ctc):
+def post_job(user_id, company, role, job_description, skills_required, job_type, ctc):
     conn = None  # Initialize conn to None
     try:
         conn = connect_to_db()
         cursor = conn.cursor()
         query = """
-        INSERT INTO JobsGroup4 (company, role, jobDescription, skillsrequired, jobtype, ctc) 
-        VALUES (%s, %s, %s, %s, %s, %s)
+        INSERT INTO JobsGroup4 (company, role, jobDescription, skillsrequired, jobtype, ctc, createdBy) 
+        VALUES (%s, %s, %s, %s, %s, %s, %s)
         """
-        cursor.execute(query, (company, role, job_description, skills_required, job_type, ctc))
+        cursor.execute(query, (company, role, job_description, skills_required, job_type, ctc, user_id))
         conn.commit()
         st.success("Job posted successfully!")
     except mysql.connector.Error as err:
@@ -32,7 +32,7 @@ def post_job(company, role, job_description, skills_required, job_type, ctc):
         if conn:  # Ensure conn is not None before closing
             conn.close()
 
-def main():
+def main(user_info):
     st.sidebar.title("Job Giver Dashboard")
     
     # Sidebar buttons for navigation
@@ -65,13 +65,14 @@ def main():
 
             if submitted:
                 if company and role and job_description and skills_required and job_type and ctc:  # Check for required fields
-                    post_job(company, role, job_description, skills_required, job_type, ctc)
+                    user_id = user_info[0]  # Fetch user ID from session state
+                    post_job(user_id, company, role, job_description, skills_required, job_type, ctc)
                 else:
                     st.error("Please fill in all fields.")
 
     elif st.session_state.page == "view_jobs":
         st.header("View Jobs")
-        view_jobs()
+        view_jobs(user_info)
 
     elif st.session_state.page == "delete_job":
         render_delete_job()
