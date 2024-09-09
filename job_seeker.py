@@ -10,20 +10,89 @@ import seeker_notices
 import seeker_analytics
 import seeker_tracker
 
-# Function to fetch all job listings from the database
-def fetch_job_listings():
-    conn = mysql.connector.connect(
+# Function to connect to the database
+def connect_to_db():
+    return mysql.connector.connect(
         host="dataserver.gramener.com",
         user="learnr",
         password="n&KZs6wa",
         database="campus_training"
     )
+
+# Function to fetch all job listings from the database
+def fetch_job_listings():
+    conn = connect_to_db()
     cursor = conn.cursor()
     query = "SELECT * FROM JobsGroup4"
     cursor.execute(query)
     jobs = cursor.fetchall()
     conn.close()
     return jobs
+
+# Function to update JobTrackerIds for the user
+def apply_for_job(user_id, job_id):
+    conn = connect_to_db()
+    cursor = conn.cursor()
+
+    # Fetch the current JobTrackerIds for the user
+    query = "SELECT JobTrackerIds FROM UserGroup4 WHERE userId = %s"
+    cursor.execute(query, (user_id,))
+    result = cursor.fetchone()
+
+    if result:
+        job_tracker_ids = result[0]
+        # Convert the current JobTrackerIds into a list, add the new jobId if not already present
+        if job_tracker_ids:
+            job_tracker_list = job_tracker_ids.split(',') if job_tracker_ids else []
+            if str(job_id) not in job_tracker_list:
+                job_tracker_list.append(str(job_id))
+        else:
+            job_tracker_list = [str(job_id)]
+        
+        # Convert list back to a comma-separated string
+        updated_job_tracker_ids = ','.join(job_tracker_list)
+        
+        # Update the JobTrackerIds field in the database
+        update_query = "UPDATE UserGroup4 SET JobTrackerIds = %s WHERE userId = %s"
+        cursor.execute(update_query, (updated_job_tracker_ids, user_id))
+        conn.commit()
+        st.success(f"Successfully applied for job ID: {job_id}")
+
+    conn.close()
+
+# Updated display_jobs function with Apply button
+def display_jobs(user_info):
+    st.title("Job Portal")
+
+    # Fetch all job listings from the database
+    jobs = fetch_job_listings()
+
+    # Job Filter options
+    col1, col2, col3, col4, col5 = st.columns(5)
+    with col1:
+        st.button("All")
+    with col2:
+        st.button("Internship")
+    with col3:
+        st.button("Fresher")
+    with col4:
+        st.button("Entry Level")
+    with col5:
+        st.button("Internship + Full Time")
+
+    # Display jobs in a grid
+    cols = st.columns(4)
+    for index, job in enumerate(jobs):
+        with cols[index % 4]:
+            st.image("https://via.placeholder.com/150", width=150)  # Placeholder image for company logo
+            st.markdown(f"**{job[1]}**")  # Company name
+            st.markdown(f"*{job[2]}*")  # Job role
+            st.markdown(f"{job[5]}")    # Job type
+            st.markdown(f"${job[6]:,.2f} per year")  # Salary formatted as currency
+
+            # Apply Button
+            if st.button(f"Apply for {job[2]}", key=f"apply_{job[0]}"):
+                apply_for_job(user_info[0], job[0])  # Pass the userId and jobId to the apply function
 
 # Main function to display the job portal and other pages
 def main(user_info):
@@ -86,11 +155,12 @@ def main(user_info):
         if st.button("Logout"):
             st.session_state['role'] = None
             st.rerun()
+
     # Main content area
     if st.session_state['current_page'] == 'profile':
         seeker_profile.main(user_info)
     elif st.session_state['current_page'] == 'jobs':
-        display_jobs()  # Call a separate function to display the job portal
+        display_jobs(user_info)  # Call the function to display the job portal
     elif st.session_state['current_page'] == 'analytics':
         seeker_analytics.main(user_info)
     elif st.session_state['current_page'] == 'academics':
@@ -126,36 +196,6 @@ def main(user_info):
             </div>
         </div>
     """, unsafe_allow_html=True)
-
-# Function to display jobs fetched from the database
-def display_jobs():
-    st.title("Job Portal")
-
-    # Fetch all job listings from the database
-    jobs = fetch_job_listings()
-
-    # Job Filter options
-    col1, col2, col3, col4, col5 = st.columns(5)
-    with col1:
-        st.button("All")
-    with col2:
-        st.button("Internship")
-    with col3:
-        st.button("Fresher")
-    with col4:
-        st.button("Entry Level")
-    with col5:
-        st.button("Internship + Full Time")
-
-    # Display jobs in a grid
-    cols = st.columns(4)
-    for index, job in enumerate(jobs):
-        with cols[index % 4]:
-            st.image("https://via.placeholder.com/150", width=150)  # Placeholder image for company logo
-            st.markdown(f"**{job[1]}**")  # Company name
-            st.markdown(f"*{job[2]}*")  # Job role
-            st.markdown(f"{job[5]}")    # Job type
-            st.markdown(f"${job[6]:,.2f} per year")  # Salary formatted as currency
 
 if __name__ == "__main__":
     # Replace this with actual user info in your application

@@ -1,5 +1,8 @@
 import streamlit as st
 import mysql.connector
+import pandas as pd
+from io import BytesIO
+import twilio_helper
 
 # Function to connect to the MySQL database
 def connect_to_db():
@@ -11,6 +14,12 @@ def connect_to_db():
     )
     return connection
 
+def export_to_csv(df, filename):
+    buffer = BytesIO()
+    df.to_csv(buffer, index=False)
+    buffer.seek(0)
+    st.download_button(label="Download CSV", data=buffer, file_name=filename, mime="text/csv")
+
 # Function to retrieve and display jobs
 def view_jobs(user_info):
     conn = None  # Initialize conn to None
@@ -18,10 +27,9 @@ def view_jobs(user_info):
         conn = connect_to_db()
         cursor = conn.cursor()
         user_id = user_info[0]  # Assuming user_info contains the logged-in user info and the first element is the user ID
-        query = "SELECT company, role, jobDescription, skillsrequired, jobtype, ctc FROM JobsGroup4 WHERE createdBy = %s"
+        query = "SELECT jobId, company, role, jobDescription, skillsrequired, jobtype, ctc FROM JobsGroup4 WHERE createdBy = %s"
         cursor.execute(query, (user_id,))
         jobs = cursor.fetchall()
-
 
         if not jobs:
             st.warning("No jobs found.")
@@ -33,11 +41,13 @@ def view_jobs(user_info):
         # Loop through jobs and display each in its own column
         for index, job in enumerate(jobs):
             with cols[index % 3]:  # Cycle through columns
-                st.markdown(f"### **{job[1]}** at **{job[0]}**")
-                st.markdown(f"**Description:** {job[2]}")
-                st.markdown(f"**Skills Required:** {job[3]}")
-                st.markdown(f"**Job Type:** {job[4]}")
-                st.markdown(f"**CTC:** ₹{job[5]:,}")
+                st.markdown(f"### **{job[2]}** at **{job[1]}**")
+                st.markdown(f"**Description:** {job[3]}")
+                st.markdown(f"**Skills Required:** {job[4]}")
+                st.markdown(f"**Job Type:** {job[5]}")
+                st.markdown(f"**CTC:** ₹{job[6]:,}")
+                if st.button(f"View Applicants", key=f"view_{job[0]}"):
+                    view_applicants(job[0])  # Pass the jobId to view_applicants function
                 st.markdown("---")
 
     except mysql.connector.Error as err:
@@ -46,3 +56,54 @@ def view_jobs(user_info):
         if conn:  # Ensure conn is not None before closing
             conn.close()
 
+# Function to display users who have applied for the selected job
+def view_applicants(job_id):
+    conn = None
+    try:
+        conn = connect_to_db()
+        cursor = conn.cursor()
+
+        # Fetch users who have applied for this job (jobId in JobTrackerIds)
+        query = """
+        SELECT userId, fullname, email, contact, skills, address
+        FROM UserGroup4 
+        WHERE FIND_IN_SET(%s, JobTrackerIds) > 0
+        """
+        cursor.execute(query, (job_id,))
+        users = cursor.fetchall()
+
+        if not users:
+            st.warning("No users have applied for this job.")
+            return
+
+        # Create a DataFrame for exporting
+        df = pd.DataFrame(users, columns=["User ID", "Name", "Email", "Phone", "Skills", "Location"])
+
+        # Display the users in a table
+        st.markdown(f"## Applicants for Job ID: {job_id}")
+        st.table(df)
+
+        # Export options
+        st.write("")
+        export_to_csv(df, f"job_{job_id}_applicants.csv")
+
+        # Text box for entering the message
+        st.write("")
+        message = "hiiiiiii"
+
+        # Contact Me button
+
+        phone_numbers = [user[3] for user in users]  # Extract phone numbers from user data
+        # Send message to each phone number
+        for number in phone_numbers:
+            try:
+                sid = twilio_helper.send_whatsapp_message(number, message)  # Send to each number
+                st.write(f"Message sent to {number}. SID: {sid}")
+            except Exception as e:
+                st.error(f"Failed to send message to {number}: {e}")
+        st.success("Messages sent to all applicants!")
+    except mysql.connector.Error as err:
+        st.error(f"Failed to retrieve applicants: {err}")
+    finally:
+        if conn:  # Ensure conn is not None before closing
+            conn.close()
