@@ -40,52 +40,52 @@ def main(user_info):
         
         if st.button(f"{user_name}"):
             st.session_state['current_page'] = 'profile'
-            st.experimental_rerun()
+            st.rerun()
 
         st.markdown(f"{user_location}")
         
         st.write("")
         if st.button("Jobs"):
             st.session_state['current_page'] = 'jobs'
-            st.experimental_rerun()
+            st.rerun()
 
         if st.button("Analysis"):
             st.session_state['current_page'] = 'analytics'
-            st.experimental_rerun()
+            st.rerun()
         
         st.write("")
         if st.button("Academics"):
             st.session_state['current_page'] = 'academics'
-            st.experimental_rerun()
+            st.rerun()
         
         if st.button("Skills"):
             st.session_state['current_page'] = 'skills'
-            st.experimental_rerun()
+            st.rerun()
 
         if st.button("Work Experience"):
             st.session_state['current_page'] = 'experience'
-            st.experimental_rerun()
+            st.rerun()
 
         if st.button("Languages"):
             st.session_state['current_page'] = 'languages'
-            st.experimental_rerun()
+            st.rerun()
         
         st.write("")
         if st.button("Calendar"):
             st.session_state['current_page'] = 'calendar'
-            st.experimental_rerun()
+            st.rerun()
 
         if st.button("Notices"):
             st.session_state['current_page'] = 'notices'
-            st.experimental_rerun()
+            st.rerun()
         
         if st.button("Tracker"):
             st.session_state['current_page'] = 'job Tracker'
-            st.experimental_rerun()
+            st.rerun()
 
         if st.button("Logout"):
             st.session_state['role'] = None
-            st.experimental_rerun()
+            st.rerun()
     # Main content area
     if st.session_state['current_page'] == 'profile':
         seeker_profile.main(user_info)

@@ -5,7 +5,7 @@ def main():
     st.write("Here you can manage users, view reports, etc.")
     if st.button("Logout"):
         st.session_state['role'] = None
-        st.experimental_rerun()
+        st.rerun()
 
 if __name__ == "__main__":
     main()

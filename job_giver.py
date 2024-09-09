@@ -46,7 +46,7 @@ def main():
     # Logout Button
     if st.sidebar.button("Logout"):
         st.session_state['role'] = None
-        st.experimental_rerun()
+        st.rerun()
 
     # Determine which page to show
     if 'page' not in st.session_state:
