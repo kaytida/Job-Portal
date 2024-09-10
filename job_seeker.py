@@ -30,36 +30,53 @@ def fetch_job_listings():
     conn.close()
     return jobs
 
-# Function to update JobTrackerIds for the user
 def apply_for_job(user_id, job_id):
     conn = connect_to_db()
     cursor = conn.cursor()
 
-    # Fetch the current JobTrackerIds for the user
-    query = "SELECT JobTrackerIds FROM UserGroup4 WHERE userId = %s"
-    cursor.execute(query, (user_id,))
-    result = cursor.fetchone()
-
-    if result:
-        job_tracker_ids = result[0]
-        # Convert the current JobTrackerIds into a list, add the new jobId if not already present
-        if job_tracker_ids:
-            job_tracker_list = job_tracker_ids.split(',') if job_tracker_ids else []
-            if str(job_id) not in job_tracker_list:
-                job_tracker_list.append(str(job_id))
-        else:
-            job_tracker_list = [str(job_id)]
-        
-        # Convert list back to a comma-separated string
-        updated_job_tracker_ids = ','.join(job_tracker_list)
-        
-        # Update the JobTrackerIds field in the database
-        update_query = "UPDATE UserGroup4 SET JobTrackerIds = %s WHERE userId = %s"
-        cursor.execute(update_query, (updated_job_tracker_ids, user_id))
+    try:
+        # Insert a record into JobTrackerGroup4
+        insert_job_tracker_query = """
+        INSERT INTO JobTrackerGroup4 (JobTrackerIds, jobId, status)
+        VALUES (%s, %s, %s)
+        """
+        # Assuming status is 'Applied' or similar
+        status = 'Applied'
+        cursor.execute(insert_job_tracker_query, (None, job_id, status))
         conn.commit()
-        st.success(f"Successfully applied for job ID: {job_id}")
 
-    conn.close()
+        # Get the generated JobTrackerId
+        job_tracker_id = cursor.lastrowid
+
+        # Fetch the current JobTrackerIds for the user
+        query = "SELECT JobTrackerIds FROM UserGroup4 WHERE userId = %s"
+        cursor.execute(query, (user_id,))
+        result = cursor.fetchone()
+
+        if result:
+            job_tracker_ids = result[0]
+            # Convert the current JobTrackerIds into a list, add the new jobId if not already present
+            if job_tracker_ids:
+                job_tracker_list = job_tracker_ids.split(',') if job_tracker_ids else []
+                if str(job_tracker_id) not in job_tracker_list:
+                    job_tracker_list.append(str(job_tracker_id))
+            else:
+                job_tracker_list = [str(job_tracker_id)]
+            
+            # Convert list back to a comma-separated string
+            updated_job_tracker_ids = ','.join(job_tracker_list)
+            
+            # Update the JobTrackerIds field in the database
+            update_query = "UPDATE UserGroup4 SET JobTrackerIds = %s WHERE userId = %s"
+            cursor.execute(update_query, (updated_job_tracker_ids, user_id))
+            conn.commit()
+            st.success(f"Successfully applied for job ID: {job_id}")
+
+    except mysql.connector.Error as err:
+        st.error(f"Error: {err}")
+    finally:
+        conn.close()
+
 
 # Updated display_jobs function with Apply button
 def display_jobs(user_info):
@@ -86,8 +103,8 @@ def display_jobs(user_info):
     for index, job in enumerate(jobs):
         with cols[index % 4]:
             st.image("https://via.placeholder.com/150", width=150)  # Placeholder image for company logo
-            st.markdown(f"**{job[1]}**")  # Company name
-            st.markdown(f"*{job[2]}*")  # Job role
+            st.markdown(f"{job[1]}")  # Company name
+            st.markdown(f"{job[2]}")  # Job role
             st.markdown(f"{job[5]}")    # Job type
             st.markdown(f"${job[6]:,.2f} per year")  # Salary formatted as currency
 
@@ -161,7 +178,7 @@ def main(user_info):
     if st.session_state['current_page'] == 'profile':
         seeker_profile.main(user_info)
     elif st.session_state['current_page'] == 'jobs':
-        display_jobs(user_info)  # Pass user_info to the display_jobs function
+        display_jobs(user_info)  # Call the function to display the job portal
     elif st.session_state['current_page'] == 'analytics':
         seeker_analytics.main(user_info)
     elif st.session_state['current_page'] == 'academics':
@@ -181,7 +198,25 @@ def main(user_info):
     elif st.session_state['current_page'] == 'chatbot':
         seeker_chatbot.main(user_info)
 
-    # Standard Streamlit button for the chatbot
+    # Notifications and Profile (Top-right corner)
+    st.markdown("""
+        <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header div {
+            margin-right: 20px;
+        }
+        </style>
+        <div class="header">
+            <div></div>
+            <div>
+            </div>
+        </div>
+    """, unsafe_allow_html=True)
+
     if st.button("Chat with Chatbot"):
         st.session_state['current_page'] = 'chatbot'
         st.rerun()
