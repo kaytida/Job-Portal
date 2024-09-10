@@ -161,7 +161,7 @@ def main(user_info):
     if st.session_state['current_page'] == 'profile':
         seeker_profile.main(user_info)
     elif st.session_state['current_page'] == 'jobs':
-        display_jobs()  # Call a separate function to display the job portal
+        display_jobs(user_info)  # Pass user_info to the display_jobs function
     elif st.session_state['current_page'] == 'analytics':
         seeker_analytics.main(user_info)
     elif st.session_state['current_page'] == 'academics':
@@ -181,59 +181,10 @@ def main(user_info):
     elif st.session_state['current_page'] == 'chatbot':
         seeker_chatbot.main(user_info)
 
-    # Notifications and Profile (Top-right corner)
-    st.markdown("""
-        <style>
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .header div {
-            margin-right: 20px;
-        }
-        </style>
-        <div class="header">
-            <div></div>
-            <div>
-            </div>
-        </div>
-    """, unsafe_allow_html=True)
-
     # Standard Streamlit button for the chatbot
     if st.button("Chat with Chatbot"):
         st.session_state['current_page'] = 'chatbot'
         st.rerun()
-
-# Function to display jobs fetched from the database
-def display_jobs():
-    st.title("Job Portal")
-
-    # Fetch all job listings from the database
-    jobs = fetch_job_listings()
-
-    # Job Filter options
-    col1, col2, col3, col4, col5 = st.columns(5)
-    with col1:
-        st.button("All")
-    with col2:
-        st.button("Internship")
-    with col3:
-        st.button("Fresher")
-    with col4:
-        st.button("Entry Level")
-    with col5:
-        st.button("Internship + Full Time")
-
-    # Display jobs in a grid
-    cols = st.columns(4)
-    for index, job in enumerate(jobs):
-        with cols[index % 4]:
-            st.image("https://via.placeholder.com/150", width=150)  # Placeholder image for company logo
-            st.markdown(f"**{job[1]}**")  # Company name
-            st.markdown(f"*{job[2]}*")  # Job role
-            st.markdown(f"{job[5]}")    # Job type
-            st.markdown(f"${job[6]:,.2f} per year")  # Salary formatted as currency
 
 if __name__ == "__main__":
     # Replace this with actual user info in your application
