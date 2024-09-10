@@ -87,13 +87,28 @@ def view_applicants(job_id):
         st.write("")
         export_to_csv(df, f"job_{job_id}_applicants.csv")
 
-        # Text box for entering the message
         st.write("")
-        message = "hiiiiiii"
 
-        # Contact Me button
+        # Initialize the session state for the message and button click
+        if "message" not in st.session_state:
+            st.session_state["message"] = ""
+        if "button_clicked" not in st.session_state:
+            st.session_state["button_clicked"] = False
+
+        # Update session state when the text area changes
+        st.session_state["message"] = st.text_area("Enter your message to send to applicants:", value=st.session_state["message"])
+
+        # Function to handle the button click
+        def handle_click():
+            st.session_state["button_clicked"] = True
+
+        # Button for sending messages
+        st.button("Contact Me", on_click=handle_click)
+
+        # Send the message only if the button was clicked
 
         phone_numbers = [user[3] for user in users]  # Extract phone numbers from user data
+        message = "hi"
         # Send message to each phone number
         for number in phone_numbers:
             try:
@@ -102,6 +117,10 @@ def view_applicants(job_id):
             except Exception as e:
                 st.error(f"Failed to send message to {number}: {e}")
         st.success("Messages sent to all applicants!")
+        
+        # Reset the button clicked state after sending
+        st.session_state["button_clicked"] = False
+
     except mysql.connector.Error as err:
         st.error(f"Failed to retrieve applicants: {err}")
     finally:
