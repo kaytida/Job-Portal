@@ -10,5 +10,4 @@ def send_whatsapp_message(phone_number, message_body):
         body=message_body,
         to=f'whatsapp:{phone_number}'
     )
-    print("ji")
     return message.sid
