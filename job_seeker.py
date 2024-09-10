@@ -9,6 +9,7 @@ import seeker_calendar
 import seeker_notices
 import seeker_analytics
 import seeker_tracker
+import seeker_chatbot  # Import the chatbot module
 
 # Function to fetch all job listings from the database
 def fetch_job_listings():
@@ -36,7 +37,7 @@ def main(user_info):
 
     # Sidebar
     with st.sidebar:
-        st.image("Blank-Profile-Picture-1.webp", width=100)  # Replace with user's profile picture if available
+        st.image("sushant_joke.jpg", width=100)  # Replace with user's profile picture if available
         
         if st.button(f"{user_name}"):
             st.session_state['current_page'] = 'profile'
@@ -86,6 +87,7 @@ def main(user_info):
         if st.button("Logout"):
             st.session_state['role'] = None
             st.rerun()
+
     # Main content area
     if st.session_state['current_page'] == 'profile':
         seeker_profile.main(user_info)
@@ -107,6 +109,8 @@ def main(user_info):
         seeker_notices.main(user_info)
     elif st.session_state['current_page'] == 'job Tracker':
         seeker_tracker.main(user_info)
+    elif st.session_state['current_page'] == 'chatbot':
+        seeker_chatbot.main(user_info)
 
     # Notifications and Profile (Top-right corner)
     st.markdown("""
@@ -126,6 +130,11 @@ def main(user_info):
             </div>
         </div>
     """, unsafe_allow_html=True)
+
+    # Standard Streamlit button for the chatbot
+    if st.button("Chat with Chatbot"):
+        st.session_state['current_page'] = 'chatbot'
+        st.rerun()
 
 # Function to display jobs fetched from the database
 def display_jobs():
