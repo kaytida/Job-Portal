@@ -1,5 +1,14 @@
+name: Trigger Test Action
+
+on:
+  push:
+    branches:
+      - main
 jobs:
   test:
+    runs-on: ubuntu-latest
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
       - name: nagasushanth.vuppala@straive.com
         run: echo "Hello, world!"
